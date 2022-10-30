@@ -1,27 +1,23 @@
 \documentclass[11 pt,oneside,a4paper,titlepage]{article}
 \usepackage{preamble}
 \graphicspath{{img/}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
 \sidebar{sideBarColor!25}
 \simpleheader{titleBackColor}{Jack}{Sparrow}{Captain | Pirate}{white}
 
-% Start Minipages
-\vspace*{3.49cm}% start 8 cm from the top of the page}
-\adjustbox{valign=t}{\begin{minipage}{7.3cm} % large 7.4 cm from the top
-		\vspace*{1.2cm} % text starts 1cm under the top of the minipage
-
+% SIDEBAR
+\vspace*{3.49cm} % From the top of the page
+\adjustbox{valign=t}{\begin{minipage}{7.3cm} % From the top
+		\vspace*{1.2cm} % Under the top of the minipage
 		\input{section/01-Profile.tex}
         \input{section/02-Contact.tex}
         \input{section/03-Langs.tex}
-
         \vfill
-
 	\end{minipage}} %
 \hfill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% MAIN SECTION %%%%%%%%%%%%%%%%%%%%
+% MAIN SECTION
 \adjustbox{valign=t}{
     \begin{minipage}{11.3cm}
 		\vspace*{1cm}
@@ -31,179 +27,29 @@
 	\end{minipage}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Second Page
+% SECOND PAGE
 \newpage
 
 \sidebar{sideBarColor!25}
 \newpageheader{titleBackColor}{Jack}{Sparrow}{Pirate \faLightbulbO \hspace{1mm} Captain}{white}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
-\adjustbox{valign=t}{%
+% SIDEBAR
+\adjustbox{valign=t}{
 	\begin{minipage}{7.3cm}
-		\vspace*{0.4cm} % text starts 0.4cm under the top the header
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% Skill and Strengths 
-		\ruleline{\textbf{Soft Skills and Strengths}}
-		\vspace*{-0.5cm}
-		\begin{center}
-			\cvtag{Creativity}\cvtag{Curiosity}\cvtag{Flexibility}\cvtag{Self Confidence}\cvtag{Ability to Plan and Organize} \cvtag{Autonomy}\cvtag{Adaptability} \cvtag{Eye for Details}\cvtag{Problem Solving}\cvtag{Team Working}\cvtag{Love Learning New Things}\cvtag{Leadership}\cvtag{Good Communication}\cvtag{Managing Information}\cvtag{Diplomacy}\cvtag{Good Listener}\cvtag{Patience}
-		\end{center}
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% Professional Skills 
-		\ruleline{\textbf{Professional Skills}}
-		\begin{center}
-			\cvtag{Skill 1}\cvtag{Skill 2}\cvtag{Skill 3}\cvtag{Skill 4}\cvtag{Skill 5}
-		\end{center}
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% Other Interests
-		\ruleline{\textbf{Other Interests}}
-		\small
-		\begin{multicols}{2}
-			\begin{itemize}
-				\item  Guitar \flag{Guitar.png}
-				\item  Piano \flag{Piano.png}
-				\item  Chess \flag{Chess.png}
-				\item  Gym \flag{Gym.png}
-				\item  Travels \flag{Travels.png}
-				\item  Movies \flag{movie2.png}
-				\item  Books \flag{Books.png}
-			\end{itemize}
-		\end{multicols}
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% QR Code
-		\ruleline{\textbf{Download My CV}}
-		\scriptsize
-		\centering
-		Download my CV via the QR below \aiOverleaf.
-		\begin{center}
-			\quad
-			\qrcode[height=2cm]{
-				https://www.dropbox.com/sh/k5pheguf9jrur8x/AADpyjYJi7V5bhPyJeP3H74ea?dl=0} \\
-			\vspace*{0.5cm}
-		\end{center}
-
+		\vspace*{0.4cm}
+        \input{section/06-Skills.tex}
+        \vfill
 	\end{minipage}
-}%
+}
 \hfill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%%%%%%%%%%%%
-\adjustbox{valign=t}{%
+% MAIN SECTION
+\adjustbox{valign=t}{
 	\begin{minipage}{11.3cm}
 		\vspace*{0.4cm}
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% Peer Reviews
-		\section*{{\faBook} ACADEMIC PEER REVIEWS}
-		\footnotesize I did academic peer review for the following journals:
-		\begin{itemize}
-			\footnotesize
-			\item{\textbf{Scientific Piracy}, IF: 4.996 (1720), September 1720;}
-		\end{itemize}
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% Information Technology Skills
-		\section*{{\faDesktop} INFORMATION TECHNOLOGY SKILLS}
-
-		\ITCcompetence{Data Analysis}{
-			\textbf{MATLAB}: \textit{Higly Specialized}\\
-			\textbf{Wolfram Mathematica}: \textit{Intermediate}\\
-			\textbf{Jupiter Notebook}: \textit{Intermediate}\\
-		}
-
-		\vspace*{0.22cm}
-
-		\ITCcompetence{Modeling and Simulation}{
-			\textbf{Simulink} : \textit{Intermediate}  \\
-			\textbf{LTSpice}: \textit{Intermediate}
-		}
-
-		\vspace*{0.22cm}
-
-		\ITCcompetence{Audio Processing}{
-			\textbf{Reaper} : \textit{Advanced}  \\
-		}
-
-		\vspace*{0.22cm}
-
-		\ITCcompetence{Office Automation}{
-			\textbf{MS Office (Excel, Word, PowerPoint)}: \textit{Higly Specialized}\\
-			\textbf{\LaTeX}: \textit{Advanced}\\
-		}
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% Programming Languages
-		\section*{{\faCode} PROGRAMMING LANGUAGES}
-		\vspace*{-0.5cm}
-		\begin{multicols}{2}
-			\begin{itemize}
-				\footnotesize
-				\item \textbf{Matlab}: Highly Specialised
-				\item \textbf{Python}: Advanced
-				\item \textbf{SQL}: Intermediate
-				\item \textbf{C/C++}: Intermediate
-				\item \textbf{Java}: Basic
-				\item[\vspace{\fill}]
-			\end{itemize}
-		\end{multicols}
-
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		% Certificates
-		\section*{{\faCertificate} CERTIFICATES}
-
-		\adjustbox{valign=t}{\begin{minipage}{2cm}
-				\begin{center}
-					\includegraphics[width=1.2cm]{IBM.png}
-				\end{center}
-			\end{minipage}}
-		\hfill \vline \hfill
-		\adjustbox{valign=t}{\begin{minipage}{9cm}
-				\begin{itemize}
-					\scriptsize
-					\item Python for Data Science, AI \& Development (\textit{Coursera, 2022})
-				\end{itemize}
-			\end{minipage}}
-
-		\vspace*{0.2cm}
-
-		\adjustbox{valign=t}{\begin{minipage}{2cm}
-				\begin{center}
-					\includegraphics[width=2cm]{Matlab.png}
-				\end{center}
-			\end{minipage}}
-		\hfill \vline \hfill
-		\adjustbox{valign=t}{\begin{minipage}{9cm}
-				\begin{itemize}
-					\scriptsize
-					\item Pirate Processing with MATLAB (\textit{Mathworks, 2022})
-					\item Signal Processing with MATLAB (\textit{Mathworks, 2022})
-					\item Deep Learning with MATLAB (\textit{Mathworks, 2022})
-					\item Machine Learning with MATLAB (\textit{Mathworks, 2021})
-				\end{itemize}
-			\end{minipage}}
-
-		\vspace*{0.2cm}
-
-		\adjustbox{valign=t}{\begin{minipage}{2cm}
-				\begin{center}
-					\includegraphics[width=1.2cm]{google.png}
-				\end{center}
-			\end{minipage}}
-		\hfill \vline \hfill
-		\adjustbox{valign=t}{\begin{minipage}{9cm}
-				\begin{itemize}
-					\scriptsize
-					\item How to became a Web Pirate (\textit{Google Pirate School, 2022})
-					\item item 2
-					\item item 3
-					\item item 4
-				\end{itemize}
-			\end{minipage}}
-
-		\vspace*{0.2cm}
-
-	\end{minipage}}
+        \input{section/07-Academic.tex}
+        \input{section/08-Tech.tex}
+        \input{section/08-Curses-Certs.tex}
+	\end{minipage}
+}
 
 \end{document}
