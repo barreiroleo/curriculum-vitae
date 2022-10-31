@@ -154,6 +154,23 @@
     \end{minipage}}
 }
 
+\newcommand{\MySectionNoPicFull}[5]{ % input: years, logo, title, university, city, specialization, description
+    \adjustbox{valign=t}{\begin{minipage}{3cm}
+    \begin{center}
+        {\small \bfseries #1} \\
+        \vspace*{0.1cm}
+    \end{center}
+    \end{minipage}}
+    \vline \hspace{10pt}
+    \adjustbox{valign=t}{\begin{minipage}{0.80\linewidth}
+        {\normalsize \bfseries #2}
+        \hfill {\footnotesize\faMapMarker  ~ #3}
+        \newline
+        %{\small \bfseries #3} \\
+        \small {\emph{#4}} \\
+        \footnotesize {#5} 
+    \end{minipage}}
+}
 % Publication Section
 \newcommand{\publication}[6]{ % Article/Conference, year, name, authors, journal, DOI
     \adjustbox{valign=t}{\begin{minipage}{2.5cm}
@@ -167,20 +184,38 @@
 
 % ITC section
 \newcommand{\ITCcompetence}[2]{ % input: Branch, description
-    \adjustbox{valign=t}{\begin{minipage}{2cm}
+    \adjustbox{valign=t}{\begin{minipage}{3cm}
     \begin{center}
         {\footnotesize \bfseries #1} \\
         \vspace*{0.1cm}
     \end{center}
     \end{minipage}}
-    \hfill \vline \hfill
-    \adjustbox{valign=t}{\begin{minipage}{8.5cm}
+    \vline \hspace{10pt}
+    \adjustbox{valign=t}{\begin{minipage}{0.80\linewidth}
         {\footnotesize #2}
     \end{minipage}}
 }
 
 \usepackage{lipsum} % dummy text
 \usepackage{adjustbox} % to a better alignement of text
+
+% Certificates
+\newcommand{\Certficate}[3]{ % input: Institution, logo, content
+    \adjustbox{valign=t}{
+        \begin{minipage}{3cm}
+            \begin{center}
+                {\small \bfseries #1} \\
+                \vspace*{0.1cm}
+                \includegraphics[width=1.2cm]{#2}
+            \end{center}
+        \end{minipage}
+    }
+    \vline \hspace{10pt} \adjustbox{valign=t}{
+        \begin{minipage}{9cm}
+            #3
+        \end{minipage}
+    }
+}
 
 % Format of the title section in the side column
 % based on https://tex.stackexchange.com/questions/65731
