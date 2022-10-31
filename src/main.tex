@@ -1,3 +1,4 @@
+% LTeX: language=es-AR
 \documentclass[11 pt,oneside,a4paper,titlepage]{article}
 \usepackage{preamble}
 \graphicspath{{img/}}
@@ -22,22 +23,16 @@
     \begin{minipage}{11.3cm}
 		\vspace*{1cm}
         \input{section/04-Education.tex}
-        \input{section/05-Works.tex}
+        \input{section/05-Works-1.tex}
 	\end{minipage}
 }
 
 % % SECOND PAGE
-% SIDEBAR
+% \newpage
+\newpageheader{titleBackColor}{Leonardo}{Barreiro}{Desarrollador | Electromecánico}{white}
 \adjustbox{valign=t}{
-	\begin{minipage}{7.3cm}
-		\vspace*{0.4cm}
-	\end{minipage}
-}
-\hfill
-% MAIN SECTION
-\adjustbox{valign=t}{
-	\begin{minipage}{11.3cm}
-		\vspace*{0.4cm}
+	\begin{minipage}{19cm}
+        \input{section/05-Works-2.tex}
         \input{section/07-Academic.tex}
         \input{section/08-Tech.tex}
         \input{section/08-Curses-Certs.tex}
