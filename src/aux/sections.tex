@@ -1,0 +1,38 @@
+\newcommand{\SectionBase}[3]{ % input: left content, right content
+	\adjustbox{valign=t}{
+		\begin{minipage}{2cm}
+			{#1}
+		\end{minipage}
+	}
+	\vline \hspace{10pt}
+	\adjustbox{valign=t}{
+		\begin{minipage}{#3}
+			{#2}
+		\end{minipage}
+	}
+}
+
+
+% WORK EXPERIENCE
+\newcommand{\WorkBase}[6]{ % input: 1 year, 2 position, 3 location, 4 Company, 5 Description
+	\SectionBase {
+		\center \small \bfseries #1\\
+	}
+	{
+		{\normalsize \bfseries #2}\hfill
+		{\footnotesize\faMapMarker~~#3}\newline
+		\small {\emph{#4}}\\
+		\footnotesize {#5}
+	}
+    {#6}
+}
+
+\newcommand{\WorkMiniWidth}[5]{
+    \WorkBase{#1}{#2}{#3}{#4}{#5}{0.80\textwidth}
+}
+
+\newcommand{\WorkFullWidth}[5]{
+    \WorkBase{#1}{#2}{#3}{#4}{#5}{0.85\textwidth}
+}
+
+% ACADEMIC
