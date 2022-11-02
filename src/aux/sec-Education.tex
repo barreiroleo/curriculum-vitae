@@ -1,0 +1,15 @@
+% EDUCATION
+% Input: 1[opt] year, 2 logo, 3 content
+\newcommand{\Study}[7]{ % input: years, logo, title, university, city, specialization, description
+	\SectionBase[1.8cm]{\MiniWidth-5ex}{
+		\begin{center}
+			{\small \bfseries #1} \\ \vspace*{0.2cm}
+			\includegraphics[width=1.3cm,height=1.3cm,keepaspectratio]{#2}
+		\end{center}
+	}{
+		{\normalsize\bfseries #3} \hfill {\footnotesize \faMapMarker  ~ #5} \newline
+		{\small\bfseries #4} \newline
+		\small {\emph{#6}} \newline
+		\footnotesize {#7}
+	}
+}

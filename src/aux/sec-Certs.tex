@@ -1,0 +1,12 @@
+% Certificates
+% Input: 1[opt] institution, 2 logo, 3 content
+\newcommand{\Certficate}[3][]{
+	\SectionBase{\FullWidth}{
+		\begin{center}
+			{\small \bfseries #1}
+			\vspace*{0.1cm}
+			\includegraphics[width=1.2cm,height=1.2cm,keepaspectratio]{#2}
+		\end{center}
+	}
+	{ #3 }
+}
