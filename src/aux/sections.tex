@@ -18,22 +18,23 @@
 }
 
 % WORK EXPERIENCE
-\newcommand{\WorkBase}[6]{ % input: 1 year, 2 position, 3 location, 4 Company, 5 Description
-	\SectionBase[1.8cm]{#6}
-	{\center \small \bfseries #1\\}
+% Input: 1 right width, 2 year, 3 position, 4 location, 5 Company, 6 Description
+\newcommand{\WorkBase}[6]{ 
+	\SectionBase[1.8cm]{#1}
+	{ \center \small \bfseries #2\\ }
 	{
-		{\normalsize \bfseries #2}\hfill
-		{\footnotesize\faMapMarker~~#3}\newline
-		\small {\emph{#4}}\\
-		\footnotesize {#5}
+		{\normalsize \bfseries #3}\hfill
+		{\footnotesize\faMapMarker~~#4}\newline
+		\small {\emph{#5}}\\
+		\footnotesize {#6}
 	}
 	\vspace{-5pt}
 }
 \newcommand{\WorkMiniWidth}[5]{
-	\WorkBase{#1}{#2}{#3}{#4}{#5}{0.80\textwidth}
+	\WorkBase{0.80\textwidth}{#1}{#2}{#3}{#4}{#5}
 }
 \newcommand{\WorkFullWidth}[5]{
-	\WorkBase{#1}{#2}{#3}{#4}{#5}{0.85\textwidth}
+	\WorkBase{0.85\textwidth}{#1}{#2}{#3}{#4}{#5}
 }
 
 % ACADEMIC
