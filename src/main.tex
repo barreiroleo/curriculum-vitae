@@ -10,8 +10,9 @@
 
 % SIDEBAR
 \vspace*{3.49cm} % From the top of the page
-\adjustbox{valign=t}{\begin{minipage}{7.3cm} % From the top
-		\vspace*{1.2cm} % Under the top of the minipage
+\adjustbox{valign=t}{
+    \begin{minipage}{7.0cm} % From the top
+		\vspace*{0.70cm} % Under the top of the minipage
 		\input{section/01-Profile.tex}
         \input{section/02-Contact.tex}
         \input{section/03-Langs.tex}
@@ -20,18 +21,18 @@
 \hfill
 % MAIN SECTION
 \adjustbox{valign=t}{
-    \begin{minipage}{11.3cm}
-		\vspace*{1cm}
+    \begin{minipage}{11.75cm}
+		\vspace*{0.70cm}
         \input{section/04-Education.tex}
         \input{section/05-Works-1.tex}
 	\end{minipage}
 }
 
 % % SECOND PAGE
-% \newpage
+\newpage
 \newpageheader{titleBackColor}{}{Leonardo Barreiro}{Desarrollador | Electromecánico}{white}
-\adjustbox{valign=t}{
-	\begin{minipage}{19cm}
+\adjustbox{left,valign=t}{
+	\begin{minipage}{19.5cm}
         \input{section/05-Works-2.tex}
         \input{section/07-Academic.tex}
         \input{section/08-Tech.tex}

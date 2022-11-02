@@ -2,12 +2,12 @@
 \newlength\cvPictureWidth
 \setlength\cvPictureWidth{4cm}
 
-
 % PRIMARY HEADER
 % \simpleheader{titleBackColor}{Name}{Surname}{Job}{textColor}
 \newcommand{\simpleheader}[5]{
 	\tikz[remember picture,overlay] {%
-		\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=3.5cm](header) at (current page.north){};%
+		\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum
+			height=3.0cm](header) at (current page.north){};
 		\node[draw=none, align=left](name) at (header) {%
 			{\Huge \color{#5} #2 \textbf{#3} }%
 		};%
@@ -18,11 +18,12 @@
 % SECONDARY HEADER
 \newcommand{\newpageheader}[5]{
 	\tikz[remember picture,overlay] {
-		\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=1.4cm](header) at (current page.north){};
-	}\vspace{0cm}
+		\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum
+			height=1.5cm](header) at (current page.north){};
+	}
 	\begin{tcolorbox}[colback=titleBackColor,boxrule=0pt,frame empty]
 		\large \textcolor{#5}{#2 \textbf{#3}}
-		\hspace*{0.2\textwidth}{\large \textcolor{#5}{#4}}
+		\hspace*{0.15\textwidth}{\large \textcolor{#5}{#4}}
 		\hspace*{\fill}{\large \textcolor{#5}{Curriculum Vitae}}
 	\end{tcolorbox}
 }
@@ -34,7 +35,6 @@
 	}\vspace{-0.7cm}%
 }
 
-
 % FLAGS LANGUAGES AND ICONS
 \newcommand{\flag}[1]{\includegraphics[align=c, width=1em]{#1}}
 
@@ -42,4 +42,3 @@
 \newcommand{\cvtag}[1]{%
 	\tikz[baseline]\node[anchor=base,draw=black!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{\footnotesize #1};
 }
-
