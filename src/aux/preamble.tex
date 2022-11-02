@@ -114,27 +114,6 @@
 % Flag for Languages section and for all small personal icons
 \newcommand{\flag}[1]{\includegraphics[align=c, width=1em]{#1}}
 
-% Command for Education and Works
-\newcommand{\MySection}[7]{ % input: years, logo, title, university, city, specialization, description
-	\adjustbox{valign=t}{\begin{minipage}{2cm}
-			\begin{center}
-				{\small \bfseries #1} \\
-				\vspace*{0.1cm}
-				\includegraphics[width=1.2cm,height=1.2cm,keepaspectratio]{#2}
-			\end{center}
-		\end{minipage}}
-	\vline \hspace{10pt}
-	\adjustbox{valign=t}{\begin{minipage}{0.80\linewidth}
-			{\normalsize\bfseries #3}
-			\hfill {\footnotesize \faMapMarker  ~ #5}
-			\newline
-			{\small\bfseries #4}
-			\newline
-			\small {\emph{#6}}
-			\newline
-			\footnotesize {#7}
-		\end{minipage}}
-}
 
 \newcommand{\MySectionNoPic}[5]{ % input: years, logo, title, university, city, specialization, description
 	\adjustbox{valign=t}{
