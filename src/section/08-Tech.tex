@@ -1,41 +1,37 @@
 % LTeX: language=es-AR
 % Information Technology Skills
-\section*{{\faCode} Lenguajes y herramientas}
+\setlength{\columnseprule}{0.1pt}
+\def\columnseprulecolor{\color{gray}}
 
-\vspace*{0.22cm}
-\Tech{Embebidos y automatización}{
-	\textbf{Autómatas:}     Step7 (Siemens) | LogoSoft (Siemens) \\
-	\textbf{Controladores:} Microchip PIC | Microchip AVR | Espressif \\
-	\textbf{Frameworks:}    PlatformIO | Arduino
-}
+\section*{{\faCode} LENGUAJES Y HERRAMIENTAS}
+\vspace*{-10pt}
+\begin{multicols}{2}
+    \Tech{Lenguajes}{
+        \textbf{Prim.} C/C++ | Python | Lua \\
+        \textbf{Sec.}  Bash | JS/TS | HTML | CSS | LaTeX
+    }
 
-\vspace*{0.22cm}
-\Tech{Lenguajes}{
-	\textbf{Principal:}   C/C++ | Python | Lua \\
-	\textbf{Secundarios:} Bash | JS | HTML | CSS | LaTeX
-}
+	\Tech{Embebidos}{ Microchip PIC | Microchip AVR | Espressif | PlatformIO | Arduino }
 
-\vspace*{0.22cm}
-\Tech{Sistemas}{
-	\textbf{Herramientas:} Git | Github | Docker | Virtual Machines | SSH | Tmux \\
-	\textbf{Linux:}        Arch derivadas (Principal) | Debian derivadas | Alpine (Contenedores)
-}
+    \Tech{Autómatas}{ Step7 (Siemens) | LogoSoft (Siemens) }
 
-\vspace*{0.22cm}
-\Tech{Documentación}{
-	\textbf{Gráficos:}  Drawio | Excallidraw | GIMP \\
-	\textbf{Escritura:} Markdown | \LaTeX | MS Office Suite
-}
+	\Tech{Electrónica}{ Proteus | Autodesk Eagle | Kicad | LTSpice }
+	\TechLeft{Sistemas}{
+		Git | Docker | Virtual Machines | SSH \\
+		Arch | Debian | Ubuntu | Alpine
+	}
 
-\vspace*{0.22cm}
-\Tech{Cálculo y Simulación}{
-	\textbf{Cálculo}    Jupyter | Mathematica | Mathcad \\
-	\textbf{Simulación} Proteus | Simulink | LTSpice
-}
+	\TechLeft{Docs.}{
+		Drawio | Excallidraw | GIMP \\
+		Markdown | \LaTeX | MS Office Suite
+	}
 
-\vspace*{0.22cm}
-\Tech{CAD y CAM}{
-	\textbf{Diseño y ensamblaje} Solidworks | Inventor | Autocad \\
-	\textbf{Electrónica}         Autodesk Eagle | Kicad \\
-	\textbf{CAM}                 Vectric  Aspire | Camotics | GRBL | Candle
-}
+	\TechLeft{Modelado}{
+		Jupyter | Mathematica | Mathcad \\
+		Proteus | Simulink | LTSpice
+	}
+
+	\TechLeft{Diseño}{ Solidworks | Inventor | Autocad }
+	% \TechLeft{CAM}{ Vectric  Aspire | Camotics | GRBL | Candle }
+\end{multicols}
+\vspace*{-30pt}

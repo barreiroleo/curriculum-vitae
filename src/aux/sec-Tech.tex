@@ -1,10 +1,24 @@
 % ITC section: 1 branch, 2 description
 \newcommand{\Tech}[2]{
-	\SectionBase[3.0cm]{\FullWidth}
+	\SectionBase[1.90cm]{7.00cm}
 	{
 		\begin{flushright}
-			{\small \bfseries #1}
+			\small\bfseries #1
 		\end{flushright}
 	}
-	{\footnotesize #2}
+	{ \footnotesize#2 }
+}
+
+\newcommand{\TechLeft}[2]{
+	\SectionBase[7.00cm]{1.90cm}
+	{
+		\begin{flushright}
+			\footnotesize#2
+		\end{flushright}
+	}
+	{
+		\begin{flushleft}
+			\small\bfseries #1
+		\end{flushleft}
+	}
 }
