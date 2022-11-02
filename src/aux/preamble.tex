@@ -170,25 +170,6 @@
 \usepackage{lipsum} % dummy text
 \usepackage{adjustbox} % to a better alignement of text
 
-% Certificates
-\newcommand{\Certficate}[3]{ % input: Institution, logo, content
-	\adjustbox{valign=t}{
-		\begin{minipage}{2cm}
-			\begin{center}
-				{\small \bfseries #1}
-				\vspace*{0.1cm}
-				\includegraphics[width=1.2cm,height=1.2cm,keepaspectratio]{#2}
-			\end{center}
-		\end{minipage}
-	}
-	\vline \hspace{-15pt}
-	\adjustbox{valign=t}{
-		\begin{minipage}{0.80\linewidth}
-			{#3}
-		\end{minipage}
-	}
-}
-
 % Format of the title section in the side column
 % based on https://tex.stackexchange.com/questions/65731
 \makeatletter
