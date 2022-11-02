@@ -37,20 +37,20 @@
 	\WorkBase{0.85\textwidth}{#1}{#2}{#3}{#4}{#5}
 }
 
-% ACADEMIC
-\newcommand{\Academic}[3]{ %Input: title, year, content
+% ACADEMIC: 1 title, 2 year, 3 content
+\newcommand{\Academic}[3]{
 	\begin{itemize}
-		\item \textbf{#1} \textit{#2} \newline \small {#3}
+		\item \textbf{#1} \textit{#2} \newline \footnotesize {#3}
 	\end{itemize}
 	\vspace{-20pt}
 }
 
-% ITC section
-\newcommand{\ITCcompetence}[2]{ % input: Branch, description
+% ITC section: 1 branch, 2 description
+\newcommand{\Tech}[2]{
 	\SectionBase[3.0cm]{0.80\linewidth}
 	{
 		\begin{flushright}
-			{\footnotesize \bfseries #1}
+			{\small \bfseries #1}
 		\end{flushright}
 	}
 	{\footnotesize #2}
