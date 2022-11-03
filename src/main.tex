@@ -1,12 +1,20 @@
 % LTeX: language=es-AR
-\include{aux/preamble}
-\include{aux/includes}
+\input{aux/preamble}
+\input{aux/includes}
 \graphicspath{{img/}}
+
+\usepackage[spanish,english]{babel}
+% \usepackage[english,spanish]{babel}
+
+\entrue
+% \estrue
 
 \begin{document}
 
 \sidebar{sideBarColor!25}
-\simpleheader{titleBackColor}{}{Leonardo Barreiro}{Desarrollador | Electromecánico}{white}
+\simpleheader{titleBackColor}{}{white}{Leonardo Barreiro}{
+	\es{Desarrollador | Electromecánico}\en{Developer | Electromechanical}
+}
 
 % SIDEBAR
 \vspace*{3.49cm} % From the top of the page
@@ -30,7 +38,9 @@
 
 % % SECOND PAGE
 \newpage
-\newpageheader{titleBackColor}{}{Leonardo Barreiro}{Desarrollador | Electromecánico}{white}
+\newpageheader{titleBackColor}{}{white}{Leonardo Barreiro}{
+	\es{Desarrollador | Electromecánico}\en{Developer | Electromechanical}
+}
 \adjustbox{left,valign=t}{
 	\begin{minipage}{19.5cm}
 		\input{section/05-Works-2.tex}

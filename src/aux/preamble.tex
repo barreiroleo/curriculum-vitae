@@ -2,6 +2,21 @@
 \title{Curriculum Vitae}
 \author{Leonardo A. Barreiro}
 
+% % MULTILINGUAL SUPPORT
+% % input: 1 Spanish input, 2[opt] English input
+% \usepackage{iflang}
+% \newcommand{\babel}[2]{
+%     \def\esp{#1}\def\eng{#2}
+% 	\esp~\eng \newline
+%     \IfLanguageName{spanish}{\eng}{\esp}
+% }
+
+\newif\ifen
+\newif\ifes
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\es}[1]{\ifes#1\fi}
+
+
 % we use the 'tcolorbox' package to create most of the formatting
 \usepackage[most]{tcolorbox}
 
